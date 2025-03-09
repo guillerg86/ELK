@@ -4,7 +4,7 @@ This integration is made using Elastic-Agent, so install Elastic Agent on the sa
 
 The fields are converted to ECS.
 
-|Log field||ElastiField|
+|Log field||Elastic field|
 |-|-|-|
 |adguard.QH|->|dns.question.name|
 |adguard.QT|->|dns.question.type|
@@ -21,7 +21,9 @@ This is an example Dashboard
 
 ## Ingest Pipeline
 
-Go to Stack Management -> Ingest Pipelines
+Go to Stack Management -> Ingest Pipelines and create a new Ingest Pipeline.
+
+Add this processors and save the pipeline with name **adguard_json_pipeline**
 
 ```
 [
